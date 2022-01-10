@@ -16,7 +16,7 @@ job('nodejs_docker_example') {
         dockerBuildAndPublish {
             repositoryName('mo29172/nodejs_docker_example')
             tag('${GIT_REVISION,length=9}')
-            registryCredentials('2dad235f-b51c-4c08-af4e-e57b3b8cf353')
+            registryCredentials('DOCKER_HUB_ID')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
